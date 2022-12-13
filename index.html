@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Service Disruption</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width:65%;
+      padding-top: 30px;
+    }
+    
+    h1.title {
+      font-size:4vw;        
+    }
+    
+    body {
+      background-repeat: repeat;
+      background-size: cover;
+      background-blend-mode: soft-light;
+      text-shadow: 2px 2px 55px #ffffff;
+      font-family: verdana;
+    }
+    
+    .main {
+      padding-left:30px;
+    }
+    
+    hr.big {
+      height: 5px;
+      margin: 30px;
+      background: black;
+      border: 0px;
+    }
+    
+    div.bigfont {
+      font-size: 2.5em;
+    }
+    
+    th {
+      text-align: left;
+    }
+    
+    td {
+      padding-right: 10px;
+    }
+    
+    footer {
+      margin-top: 100px;
+    }
+    
+    p.foot {
+      font-size: 0.75em;
+    }
+  </style>
+  <script>
+    var today = new Date(Date.now()).toLocaleString().split(',')[0];
+    window.onload = choosePic;
+    var myPix = new Array("images/fixing_pixabay.jpg","images/repair_pixabay.jpg","images/solder_pixabay.jpg");
+    function choosePic() {
+      var randomNum = Math.floor(Math.random() * myPix.length);
+      document.body.style.backgroundImage = ["url('", myPix[randomNum] , "'), url('images/medgray.jpg')"].join(' ');
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="expires" content="0">
+  <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+</head>
+<body>
+  <div>
+    <img src="images/nc_horizontal.png" alt="Logo for Nevada County California - Foothills and Mountains" title="Nevada County Logo" class="logo">
+  </div>
+  <div class="main">
+    <p>      
+      <h1 class="title">www.NevadaCountyCA.gov is experiencing an unexpected outage.</h1>
+      <h2>Our IT staff are actively working to fix the issue.</h2>
+    </p>
+    </br>
+    <hr class="big">
+    </br>
+    <p><h1 style="text-align:center;"><i>While you wait...</i></h1></p></br>
+  </div>
+  <div class="main">
+    <p><h3>Departments you can call:</br>
+    (8-5, Mon-Fri)</h3></p>
+    <div class="bigfont">
+      <table>
+        <tr><th>Department</th><th>Phone</th></tr>
+        <tr><td>Assessor</td><td>530-265-1232</td></tr>
+        <tr><td>Building</td><td>530-265-1222 Opt. 1</td></tr>
+        <tr><td>Elections</td><td>530-265-1298</td></tr>
+        <tr><td>GIS Maps</td><td>530-265-1238</td></tr>
+        <tr><td>Library</td><td>530-265-7050</td></tr>
+        <tr><td>Sheriff</td><td>530-265-1471</td></tr>
+        <tr><td>Solid Waste</td><td>530-265-1411</td></tr>
+        <tr><td>Treasurer-Tax Collector</td><td>530-265-1285</td></tr>
+      </table>
+    </div>
+    </br>
+    <p><h3>Other County websites you can visit:</h3></p>
+    <div class="bigfont">
+      <ul>
+        <li><a href="https://common1.mptsweb.com/mbc/nevada/tax/search/">Tax Inquiry/Tax Bills</a></li>
+        <li><a href="https://common1.mptsweb.com/mbap/nevada/asr/">Public Assessor/Value Notices</a></li>
+        <li><a href="https://permits.mynevadacounty.com/CitizenAccess/Default.aspx/">Permits</a></li>
+        <li><a href="https://aware2.zonehaven.com/">Zonehaven Evacuation Zones</a></li>
+        <li><a href="https://nevcounty.maps.arcgis.com/home/gallery.html?view=grid&sortOrder=desc&sortField=modified/">GIS Mapping Applications</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+<footer>
+  <p class="foot"><i>Updated: 
+      <script>
+        document.write(today)
+      </script></i>
+  </p>
+  <p class="foot">Questions can be directed to: <a href="mailto:webmaster@nevadacountyca.gov">WebMaster@nevadacountyca.gov</a></p>
+</footer>
+</html>

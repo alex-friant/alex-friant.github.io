@@ -1,0 +1,51 @@
+# Examples can be found here:
+# https://git-scm.com/docs/gitignore
+
+
+###################### Ignore in this directory
+# folders
+\_archive
+\CodeRed
+\SDE_Connections10_1
+\SDE_Connections
+\.vs
+
+# files
+
+
+###################### Ignore EVERYWHERE
+# folders
+_archive
+archive
+.idea
+
+# filegeodatabases 
+*.gdb
+
+# files
+# shapefiles
+*.cpg
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.shp
+*.shx
+*.shp.xml
+
+# other
+*.csv
+*.docx
+*.json
+*.lnk
+*.log
+*.lyr
+*.mxd
+*.pdf
+*.pyc
+*.rlf
+*.sde
+*.tbx
+*.xml
+*.xls
+*.zip
