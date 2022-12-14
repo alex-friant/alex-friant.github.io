@@ -3,17 +3,14 @@
 <head>
   <title>Service Disruption</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     .logo {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width:65%;
+      width:50%;
       padding-top: 30px;
-    }
-    
-    h1.title {
-      font-size:4vw;        
     }
     
     body {
@@ -23,20 +20,24 @@
       text-shadow: 2px 2px 55px #ffffff;
       font-family: verdana;
     }
+
+    .body {
+      background-color: black;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
     
     .main {
       padding-left:30px;
+      text-align: center;
     }
-    
+
     hr.big {
       height: 5px;
-      margin: 30px;
+      margin: 20px;
       background: black;
       border: 0px;
-    }
-    
-    div.bigfont {
-      font-size: 2.5em;
     }
     
     th {
@@ -47,12 +48,59 @@
       padding-right: 10px;
     }
     
-    footer {
-      margin-top: 100px;
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        display: flex;
     }
-    
-    p.foot {
-      font-size: 0.75em;
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+          .left {
+            float: none;
+            width: 100%;
+          }
+
+          .right {
+            float: none;
+            width: 100%;
+          }
+  
+          .wrapper {
+          width: 90%;
+          margin: auto;
+          height: auto;
+          display: block;
+        }
+
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:75%;
+            padding-top: 15px;
+        }
+
+        .title {font-size: 1.2em}
+        .description {font-size: 1.1em}
+        .main {
+            padding-left:20px;
+            padding-right: 20px;
+        }
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.65em;
+      width: 100%;
     }
   </style>
   <script>
@@ -75,18 +123,14 @@
   </div>
   <div class="main">
     <p>      
-      <h1 class="title">www.NevadaCountyCA.gov is experiencing an unexpected outage.</h1>
-      <h2>Our IT staff are actively working to fix the issue.</h2>
+      <h2 class="title">www.NevadaCountyCA.gov is experiencing an unexpected outage.</h2>
+      <h3 class="description">Our IT staff are actively working to fix the issue.</h3>
     </p>
-    </br>
     <hr class="big">
-    </br>
-    <p><h1 style="text-align:center;"><i>While you wait...</i></h1></p></br>
   </div>
-  <div class="main">
-    <p><h3>Departments you can call:</br>
-    (8-5, Mon-Fri)</h3></p>
-    <div class="bigfont">
+  <div class="wrapper">
+    <div class="left">
+      <p><h3 class="description">Departments you can call:</br>(8-5, Mon-Fri)</h3></p>
       <table>
         <tr><th>Department</th><th>Phone</th></tr>
         <tr><td>Assessor</td><td>530-265-1232</td></tr>
@@ -100,8 +144,8 @@
       </table>
     </div>
     </br>
-    <p><h3>Other County websites you can visit:</h3></p>
-    <div class="bigfont">
+    <div class="right">
+      <p><h3 class="description">Other County websites you can visit:</h3></p>
       <ul>
         <li><a href="https://common1.mptsweb.com/mbc/nevada/tax/search/">Tax Inquiry/Tax Bills</a></li>
         <li><a href="https://common1.mptsweb.com/mbap/nevada/asr/">Public Assessor/Value Notices</a></li>
@@ -111,7 +155,6 @@
       </ul>
     </div>
   </div>
-  
 </body>
 <footer>
   <p class="foot"><i>Updated: 
