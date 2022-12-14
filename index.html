@@ -1,168 +1,168 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Service Disruption</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .logo {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width:50%;
-      padding-top: 30px;
-    }
-    
-    body {
-      background-repeat: repeat;
-      background-size: cover;
-      background-blend-mode: soft-light;
-      text-shadow: 2px 2px 55px #ffffff;
-      font-family: verdana;
-    }
-
-    .body {
-      background-color: black;
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-    
-    .main {
-      padding-left:30px;
-      text-align: center;
-    }
-
-    hr.big {
-      height: 5px;
-      margin: 20px;
-      background: black;
-      border: 0px;
-    }
-    
-    th {
-      text-align: left;
-    }
-    
-    td {
-      padding-right: 10px;
-    }
-    
-    .wrapper {
-        width: 90%;
-        margin: auto;
-        height: auto;
-        display: flex;
-    }
-
-    .left {
-        width: 50%;
-    }
-
-    .right {
-        width: 50%;
-    }
-
-    @media screen and (max-width: 600px) {
-          .left {
-            float: none;
-            width: 100%;
-          }
-
-          .right {
-            float: none;
-            width: 100%;
-          }
-  
-          .wrapper {
-          width: 90%;
-          margin: auto;
-          height: auto;
-          display: block;
-        }
-
+    <title>Service Disruption</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
         .logo {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width:75%;
-            padding-top: 15px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+          padding-top: 30px;
+        }
+    
+        body {
+          background-repeat: repeat;
+          background-size: cover;
+          background-blend-mode: soft-light;
+          text-shadow: 2px 2px 55px #ffffff;
+          font-family: verdana;
         }
 
-        .title {font-size: 1.2em}
-        .description {font-size: 1.1em}
+        .body {
+          background-color: black;
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+    
         .main {
-            padding-left:20px;
-            padding-right: 20px;
+          padding-left:30px;
+          text-align: center;
         }
-    }
 
-    footer {
-      margin-top: 50px;
-      font-size: 0.65em;
-      width: 100%;
-    }
-  </style>
-  <script>
-    var today = new Date(Date.now()).toLocaleString().split(',')[0];
-    window.onload = choosePic;
-    var myPix = new Array("images/fixing_pixabay.jpg","images/repair_pixabay.jpg","images/solder_pixabay.jpg");
-    function choosePic() {
-      var randomNum = Math.floor(Math.random() * myPix.length);
-      document.body.style.backgroundImage = ["url('", myPix[randomNum] , "'), url('images/medgray.jpg')"].join(' ');
-    }
-  </script>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="expires" content="0">
-  <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        hr.big {
+          height: 5px;
+          margin: 20px;
+          background: black;
+          border: 0px;
+        }
+    
+        th {
+          text-align: left;
+        }
+    
+        td {
+          padding-right: 10px;
+        }
+    
+        .wrapper {
+            width: 90%;
+            margin: auto;
+            height: auto;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .left {
+                float: none;
+                width: 100%;
+            }
+
+            .right {
+                float: none;
+                width: 100%;
+            }
+  
+            .wrapper {
+                width: 90%;
+                margin: auto;
+                height: auto;
+                display: block;
+            }
+
+            .logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width:75%;
+                padding-top: 15px;
+            }
+
+            .title {font-size: 1.2em}
+            .description {font-size: 1.1em}
+            .main {
+                padding-left:20px;
+                padding-right: 20px;
+            }
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.65em;
+            width: 100%;
+        }
+    </style>
+    <script>
+        var today = new Date(Date.now()).toLocaleString().split(',')[0];
+        window.onload = choosePic;
+        var myPix = new Array("images/fixing_pixabay.jpg","images/repair_pixabay.jpg","images/solder_pixabay.jpg");
+        function choosePic() {
+            var randomNum = Math.floor(Math.random() * myPix.length);
+            document.body.style.backgroundImage = ["url('", myPix[randomNum] , "'), url('images/medgray.jpg')"].join(' ');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 </head>
 <body>
-  <div>
-    <img src="images/nc_horizontal.png" alt="Logo for Nevada County California - Foothills and Mountains" title="Nevada County Logo" class="logo">
-  </div>
-  <div class="main">
-    <p>      
-      <h2 class="title">www.NevadaCountyCA.gov is experiencing an unexpected outage.</h2>
-      <h3 class="description">Our IT staff are actively working to fix the issue.</h3>
-    </p>
-    <hr class="big">
-  </div>
-  <div class="wrapper">
-    <div class="left">
-      <p><h3 class="description">Departments you can call:</br>(8-5, Mon-Fri)</h3></p>
-      <table>
-        <tr><th>Department</th><th>Phone</th></tr>
-        <tr><td>Assessor</td><td>530-265-1232</td></tr>
-        <tr><td>Building</td><td>530-265-1222 Opt. 1</td></tr>
-        <tr><td>Elections</td><td>530-265-1298</td></tr>
-        <tr><td>GIS Maps</td><td>530-265-1238</td></tr>
-        <tr><td>Library</td><td>530-265-7050</td></tr>
-        <tr><td>Sheriff</td><td>530-265-1471</td></tr>
-        <tr><td>Solid Waste</td><td>530-265-1411</td></tr>
-        <tr><td>Treasurer-Tax Collector</td><td>530-265-1285</td></tr>
-      </table>
+    <div>
+        <img src="images/nc_horizontal.png" alt="Logo for Nevada County California - Foothills and Mountains" title="Nevada County Logo" class="logo">
     </div>
-    </br>
-    <div class="right">
-      <p><h3 class="description">Other County websites you can visit:</h3></p>
-      <ul>
-        <li><a href="https://common1.mptsweb.com/mbc/nevada/tax/search">Tax Inquiry/Tax Bills</a></li>
-        <li><a href="https://common1.mptsweb.com/mbap/nevada/asr">Public Assessor/Value Notices</a></li>
-        <li><a href="https://permits.mynevadacounty.com/CitizenAccess/Default.aspx">Permits</a></li>
-        <li><a href="https://aware2.zonehaven.com">Zonehaven Evacuation Zones</a></li>
-        <li><a href="https://nevcounty.maps.arcgis.com/home/gallery.html?view=grid&sortOrder=desc&sortField=modified">GIS Mapping Applications</a></li>
-        <li><a href="https://reports.nevcounty.net/Justice/rdPage.aspx">Justic Report Center</a></li>
-      </ul>
+    <div class="main">
+        <p>      
+            <h2 class="title">www.NevadaCountyCA.gov is experiencing an unexpected outage.</h2>
+            <h3 class="description">Our IT staff are actively working to fix the issue.</h3>
+        </p>
+        <hr class="big">
     </div>
-  </div>
+    <div class="wrapper">
+        <div class="left">
+            <p><h3 class="description">Departments you can call:</br>(8-5, Mon-Fri)</h3></p>
+            <table>
+            <tr><th>Department</th><th>Phone</th></tr>
+            <tr><td>Assessor</td><td>530-265-1232</td></tr>
+            <tr><td>Building</td><td>530-265-1222 Opt. 1</td></tr>
+            <tr><td>Elections</td><td>530-265-1298</td></tr>
+            <tr><td>GIS Maps</td><td>530-265-1238</td></tr>
+            <tr><td>Library</td><td>530-265-7050</td></tr>
+            <tr><td>Sheriff</td><td>530-265-1471</td></tr>
+            <tr><td>Solid Waste</td><td>530-265-1411</td></tr>
+            <tr><td>Treasurer-Tax Collector</td><td>530-265-1285</td></tr>
+            </table>
+        </div>
+        </br>
+        <div class="right">
+            <p><h3 class="description">Other County websites you can visit:</h3></p>
+            <ul>
+            <li><a href="https://common1.mptsweb.com/mbc/nevada/tax/search">Tax Inquiry/Tax Bills</a></li>
+            <li><a href="https://common1.mptsweb.com/mbap/nevada/asr">Public Assessor/Value Notices</a></li>
+            <li><a href="https://permits.mynevadacounty.com/CitizenAccess/Default.aspx">Permits</a></li>
+            <li><a href="https://aware2.zonehaven.com">Zonehaven Evacuation Zones</a></li>
+            <li><a href="https://nevcounty.maps.arcgis.com/home/gallery.html?view=grid&sortOrder=desc&sortField=modified">GIS Mapping Applications</a></li>
+            <li><a href="https://reports.nevcounty.net/Justice/rdPage.aspx">Justic Report Center</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 <footer>
-  <p class="foot"><i>Updated: 
-      <script>
+    <p class="foot"><i>Updated: 
+        <script>
         document.write(today)
-      </script></i>
-  </p>
-  <p class="foot">Questions can be directed to: <a href="mailto:webmaster@nevadacountyca.gov">WebMaster@nevadacountyca.gov</a></p>
+        </script></i>
+    </p>
+    <p class="foot">Questions can be directed to: <a href="mailto:webmaster@nevadacountyca.gov">WebMaster@nevadacountyca.gov</a></p>
 </footer>
 </html>
